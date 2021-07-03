@@ -3,10 +3,11 @@
 @import "./base/container";
 
 //Style for components
-
+@import "./components/section-title.scss";
 
 //Style for layout
 @import "./layout/problems";
 
 
 //Style for utils
+@import "./utils/variables";
