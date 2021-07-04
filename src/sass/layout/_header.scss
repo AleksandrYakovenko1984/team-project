@@ -4,7 +4,6 @@
 
   a {
     text-decoration: none;
-    display: block;
   }
 }
 .logo {
@@ -20,10 +19,7 @@
 .logo__link {
   text-decoration: none;
 }
-.logo__front::after {
-  content: '';
-  background-image: url();
-}
+
 .logo__text {
   font-size: 8px;
   line-height: 1.25;
@@ -70,14 +66,28 @@
   color: #ff6b09;
 }
 @media screen and (max-width: 767px) {
+  .logo__front::after {
+    content: ' ';
+    background-image: url(/./images/icons/fire.svg);
+    width: 22px;
+    height: 30px;
+  }
+  .header {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
   .header-menu {
     display: none;
   }
+  .navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
   .menu__burger-btn {
     width: 21px;
-    height: 12px;
-  }
-  .menu__icon {
+    height: 15px;
+    background-image: url(/./images/icons/menu.svg);
     fill: #000000;
   }
 }
