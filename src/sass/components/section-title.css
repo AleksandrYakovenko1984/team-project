@@ -1,0 +1,29 @@
+.section-title {
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 1.3;
+  letter-spacing: 0.03em;
+  margin-bottom: 30px;
+}
+
+.section-title__ligth-theme {
+  color: var(--primary-text-color);
+}
+
+.section-title__dark-theme {
+  color: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+  .section-title {
+    font-size: 26px;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .section-title {
+    font-size: 46px;
+    margin-bottom: 50px;
+  }
+}
+/*# sourceMappingURL=section-title.css.map */
