@@ -33,7 +33,9 @@
     }
 
     .reviews-slide {
-      display: flex;
+      @media screen and (min-width: 768px) {
+        display: flex;
+      }
 
       .reviews-slide-photo {
         border-radius: 50%;
