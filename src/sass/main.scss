@@ -1,2 +1,16 @@
+// Style for base
+@import './base/common';
+@import './base/container';
 
+//Style for components
+@import './components/section-title.scss';
 
+//Style for layout
+
+@import './layout/guarantee';
+@import './layout/problems';
+@import './layout/header';
+@import './layout/hero';
+
+//Style for utils
+@import './utils/variables';

@@ -1,0 +1,47 @@
+// .hero {
+
+// }
+.hero__front-name {
+  font-weight: 800;
+  font-size: 58px;
+  line-height: 130%;
+  /* or 75px */
+
+  letter-spacing: 0.03em;
+
+  color: #111518;
+}
+.hero__txt {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 22px;
+  /* or 157% */
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.08em;
+
+  color: #111518;
+}
+.hero__gray-txt {
+  color: #b9b9b9;
+}
+.hero__orange {
+  color: var(--accennt-color);
+}
+.hero__btn {
+  width: 260px;
+  height: 48px;
+  background-color: var(--accennt-color);
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
