@@ -1,3 +1,4 @@
+
 @charset "UTF-8";
 h1,
 h2,
@@ -71,6 +72,7 @@ body {
   margin-bottom: 30px;
 }
 
+
 .section-title__ligth-theme {
   color: var(--primary-text-color);
 }
@@ -90,11 +92,35 @@ body {
     font-size: 46px;
     margin-bottom: 50px;
   }
+
+.logo {
+  font-weight: 800;
+  font-size: 26px;
+  line-height: 1.23;
+  /* identical to box height */
+  letter-spacing: 0.04em;
+  color: #111518;
+}
+
+.logo__front::after {
+  content: '';
+  background-image: url();
+}
+
+.hero__front-name {
+  font-weight: 800;
+  font-size: 58px;
+  line-height: 130%;
+  /* or 75px */
+  letter-spacing: 0.03em;
+  color: #111518;
+
 }
 
 .problems {
   padding-top: 30px;
   padding-bottom: 50px;
+
   background: linear-gradient(var(--primary-text-color) 0 545px, white 545px 100%);
 }
 
@@ -126,11 +152,13 @@ body {
   font-size: 14px;
   line-height: 2;
   letter-spacing: 0.08em;
+
 }
 
 .problems-title-word {
   color: var(--accennt-color);
 }
+
 
 @media screen and (min-width: 768px) {
   .section-title {
@@ -300,6 +328,8 @@ body {
 .orange-text {
   color: var(--accennt-color);
 }
+
+
 
 :root {
   --primary-text-color: #111518;
