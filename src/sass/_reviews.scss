@@ -1,0 +1,98 @@
+.reviews-section {
+  padding: 50px 0;
+
+  .reviews-container {
+    padding: 0 15px;
+    max-width: 450px;
+    margin: 0 auto;
+
+    @media screen and (min-width: 768px) {
+      max-width: 738px;
+    }
+
+    @media screen and (min-width: 1366px) {
+      min-width: 1336px;
+    }
+
+    .reviews-heading {
+      color: var(--primary-text-color);
+      font-weight: 800;
+      font-size: 20px;
+      line-height: 1.3;
+      text-align: center;
+      letter-spacing: 0.03em;
+      margin-bottom: 30px;
+
+      @media screen and (min-width: 768px) {
+        font-size: 26px;
+      }
+
+      @media screen and (min-width: 1366px) {
+        font-size: 46px;
+      }
+    }
+
+    .reviews-slide {
+      @media screen and (min-width: 768px) {
+        display: flex;
+      }
+
+      .reviews-slide-photo {
+        border-radius: 50%;
+      }
+
+      .reviews-slide-text {
+        .reviews-heading--name {
+          color: var(--accennt-color);
+          font-weight: 800;
+          font-size: 14px;
+          line-height: 1.2;
+          letter-spacing: 0.08em;
+
+          @media screen and (min-width: 768px) {
+            font-size: 20px;
+          }
+
+          @media screen and (min-width: 1366px) {
+            font-size: 30px;
+          }
+        }
+
+        .reviews-slide-text--grey {
+          color: var(--second-primary-text-color);
+          font-size: 12px;
+          line-height: 1.3;
+          letter-spacing: 0.08em;
+
+          @media screen and (min-width: 1366px) {
+            font-size: 14px;
+            line-height: 1.2;
+          }
+        }
+
+        .reviews-slide-text--black {
+          font-size: 12px;
+          line-height: 1.7;
+          color: #3d3d3d;
+
+          @media screen and (min-width: 1366px) {
+            font-size: 18px;
+            line-height: 1.6;
+          }
+
+          .reviews-link-read-more {
+            font-size: 12px;
+            line-height: 1.7;
+            text-decoration-line: underline;
+            color: var(--accennt-color);
+
+            @media screen and (min-width: 1366px) {
+              font-size: 18px;
+              line-height: 1.6;
+            }
+          }
+        }
+      }
+    }
+  }
+}
