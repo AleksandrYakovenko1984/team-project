@@ -91,4 +91,21 @@
     margin-right: auto;
     margin-left: auto;
   }
+  .hero__picture {
+    background-image: url(../images/hero@mob.img.one-1x.png);
+    background-repeat: no-repeat;
+    width: 208px;
+    height: 178px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 30px;
+  }
+  // .hero__picture-front {
+  //   background-image: url(../images/hero@mob.img.two-1x.png);
+  //   background: url(../images/hero@mob.img.one-1x.png);
+  //   width: 177.75px;
+  //   height: 177.5px;
+  //   left: 76.07px;
+  //   top: 393px;
+  // }
 }
