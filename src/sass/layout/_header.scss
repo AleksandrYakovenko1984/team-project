@@ -4,7 +4,6 @@
 
   a {
     text-decoration: none;
-    display: block;
   }
 }
 .logo {
@@ -70,8 +69,17 @@
   color: #ff6b09;
 }
 @media screen and (max-width: 767px) {
+  .header {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
   .header-menu {
     display: none;
+  }
+  .navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
   .menu__burger-btn {
     width: 21px;
