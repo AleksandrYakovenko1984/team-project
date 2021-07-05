@@ -1,0 +1,52 @@
+@media screen and (max-width: 1000px) {
+  .mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+    z-index: 999;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    background: rgba(17, 21, 24, 0.9);
+  }
+  .mobile-menu__container {
+    position: relative;
+    padding-top: 35px;
+    padding-bottom: 220px;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 100vh;
+  }
+  .mobile-menu__close-button {
+    background-color: transparent;
+    position: absolute;
+    width: 20.5px;
+    height: 0px;
+    left: 286px;
+    top: 51.5px;
+  }
+  .mobile-menu__close-icon {
+    fill: #ffffff;
+    width: 20px;
+    height: 20px;
+    border: none;
+    background-color: rgba(17, 21, 24, 0.9);
+  }
+
+  .logo__txt-item {
+    color: #ffffff;
+  }
+  .mobile-menu.is-open {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+}
+@media (min-width: 1001px) {
+  .mobile-menu {
+    display: none;
+  }
+}

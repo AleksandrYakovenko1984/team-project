@@ -68,10 +68,15 @@
 @media screen and (max-width: 767px) {
   .logo__front::after {
     content: ' ';
-    background-image: url(/./images/icons/fire.svg);
+    position: absolute;
+    left: 1.76%;
+    right: 0.26%;
+    top: 0.01%;
+    bottom: 0.01%;
     width: 22px;
     height: 30px;
   }
+
   .header {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -94,5 +99,16 @@
 @media screen and (max-width: 1000px) {
   .nav-list {
     display: none;
+  }
+  .navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .menu__burger-btn {
+    width: 21px;
+    height: 15px;
+    background-image: url(/./images/icons/menu.svg);
+    fill: #000000;
   }
 }
