@@ -129,6 +129,11 @@
           .reviews-slide--photos-items {
             &:not(:last-child) {
               margin-right: 10px;
+
+              // .reviews-slide--photos-items-picture {
+              //   width: 54px;
+              //   height: 54px;
+              // }
             }
           }
 
