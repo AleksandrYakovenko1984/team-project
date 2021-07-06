@@ -124,6 +124,21 @@
 
         .reviews-slide--photos {
           display: flex;
+          justify-content: center;
+
+          .reviews-slide--photos-items {
+            &:not(:last-child) {
+              margin-right: 10px;
+            }
+          }
+
+          .reviews-slide--photos-items-dsn {
+            display: none;
+
+            @media screen and (min-width: 768px) {
+              display: block;
+            }
+          }
         }
       }
     }
