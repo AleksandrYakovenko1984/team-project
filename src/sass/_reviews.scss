@@ -45,6 +45,16 @@
         align-items: center;
         flex-direction: column;
 
+        .reviews-picture {
+          width: 90px;
+          height: 90px;
+
+          @media screen and (min-width: 768px) {
+            width: 150px;
+            height: 150px;
+          }
+        }
+
         .reviews-link-icon-box {
           margin: 30px 0;
           .reviews-link-icon {
@@ -57,6 +67,7 @@
       }
 
       .reviews-slide-text {
+        text-align: center;
         .reviews-heading--name {
           color: var(--accennt-color);
           font-weight: 800;
@@ -109,6 +120,10 @@
               line-height: 1.6;
             }
           }
+        }
+
+        .reviews-slide--photos {
+          display: flex;
         }
       }
     }
