@@ -123,4 +123,37 @@
     width: 260px;
     height: 48px;
   }
+  .logo__link {
+    margin-right: 180px;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+  }
+  .header-menu {
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav-list {
+    list-style-type: none;
+    align-items: center;
+    li:not(:last-child) {
+      margin-right: 40px;
+    }
+  }
+  .nav-list__item {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+
+    text-transform: uppercase;
+
+    color: #b9b9b9;
+  }
+  .nav-list__btn {
+    margin-left: 60px;
+  }
 }

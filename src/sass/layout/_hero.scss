@@ -131,3 +131,31 @@
     margin-top: 52px;
   }
 }
+@media screen and (min-width: 1366px) {
+  .hero__front-name {
+    font-weight: 800;
+    font-size: 58px;
+    line-height: 130%;
+    /* or 75px */
+    max-width: 640px;
+    letter-spacing: 0.03em;
+
+    color: #111518;
+  }
+  .hero__txt {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 22px;
+    /* or 157% */
+
+    display: flex;
+
+    align-items: center;
+    letter-spacing: 0.08em;
+
+    color: #111518;
+  }
+  .hero__gray-txt {
+    display: block;
+  }
+}
