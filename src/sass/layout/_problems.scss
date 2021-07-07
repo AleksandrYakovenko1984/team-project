@@ -68,8 +68,7 @@
     .problems{
         padding-top: 115px;
         padding-bottom: 180px;
-        padding-left: 10px;
-        padding-right: 0;
+        
         background: linear-gradient(var(--primary-text-color) 0 560px, rgba(255, 255, 255, 1) 560px 100%);
 
         &__list{
@@ -78,11 +77,11 @@
             justify-content: unset;
             padding-top: 10px;
             padding-bottom: 60px;
-            padding-left: 115px;
-            padding-right: 115px;
+            padding-left: 105px;
+            padding-right: 105px;
 
             &-item{
-                width: 335px;
+                width: 330px;
                 margin-top: 60px;
             }
 

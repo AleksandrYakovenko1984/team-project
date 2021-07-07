@@ -192,7 +192,7 @@
     }
 
     .program{
-        padding: 120px 0;
+        padding: 120px 20px;
         background: linear-gradient(var(--primary-text-color) 0 1237px, rgba(255, 255, 255, 1) 1237px 100%);
 
         &__list{
@@ -252,6 +252,7 @@
         justify-content: start;
         padding-left: 80px;
         padding-bottom: 70px;
+        padding-top: 70px;
     }
 
     .whychoose-item{
