@@ -66,16 +66,18 @@
   color: #ff6b09;
 }
 @media screen and (max-width: 767px) {
-  .logo__front::after {
-    content: ' ';
-    position: absolute;
-    left: 1.76%;
-    right: 0.26%;
-    top: 0.01%;
-    bottom: 0.01%;
-    width: 22px;
-    height: 30px;
-  }
+  // .logo__front::after {
+  //   content: ' ';
+  //   background-image: url(/./images/icons/fire.svg);
+  //   position: absolute;
+
+  //   left: 1.76%;
+  //   right: 0.26%;
+  //   top: 0.01%;
+  //   bottom: 0.01%;
+  //   width: 22px;
+  //   height: 30px;
+  // }
 
   .header {
     padding-top: 30px;
@@ -110,5 +112,15 @@
     height: 15px;
     background-image: url(/./images/icons/menu.svg);
     fill: #000000;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .nav-list__btn {
+    width: 260px;
+    height: 48px;
   }
 }

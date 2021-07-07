@@ -54,16 +54,14 @@
     font-size: 20px;
     line-height: 130%;
     /* or 26px */
-
+    max-width: 280px;
     letter-spacing: 0.03em;
     color: #111518;
-  }
-  .hero__front-name {
-    max-width: 280px;
-    padding-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
+    padding-bottom: 20px;
   }
+
   .hero__txt {
     margin-top: 30px;
     margin-bottom: 30px;
@@ -92,7 +90,7 @@
     margin-left: auto;
   }
   .hero__picture {
-    background-image: url(../images/hero@mob.img.one-1x.png);
+    background-image: url(../images/hero@mob.img.two-1x.png);
     background-repeat: no-repeat;
     width: 208px;
     height: 178px;
@@ -101,11 +99,35 @@
     margin-top: 30px;
   }
   // .hero__picture-front {
-  //   background-image: url(../images/hero@mob.img.two-1x.png);
   //   background: url(../images/hero@mob.img.one-1x.png);
+  //   background-repeat: no-repeat;
   //   width: 177.75px;
   //   height: 177.5px;
   //   left: 76.07px;
   //   top: 393px;
   // }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-top: 40px;
+    padding-bottom: 60px;
+    background-image: url();
+  }
+  .hero__front-name {
+    font-size: 26px;
+    max-width: 332px;
+    margin-bottom: 8px;
+  }
+  .hero__txt {
+    display: block;
+  }
+  .hero__gray-txt {
+    display: block;
+  }
+  .hero__orange {
+    display: block;
+  }
+  .hero__btn {
+    margin-top: 52px;
+  }
 }
