@@ -1,70 +1,174 @@
 // main section
 .how-we-do {
-  width: 1314px;
+  background-color: blanchedalmond;
+  margin-bottom: 130px;
 }
 // h3
 .how-we-do-title {
-  font-style: normal;
   font-weight: 800;
-  font-size: 46px;
   line-height: 1.3;
   letter-spacing: 0.03em;
   color: #111518;
+  margin-bottom: 50px;
 }
 // ul
 .how-we-do-list {
+  display: flex;
+  flex-wrap: wrap;
   cursor: pointer;
 }
 // li
-.how-do-card-item {
-  width: 425px;
+.how-do-item {
+  width: 100%;
+  margin-right: -20px;
+  margin-bottom: 20px;
   background: #ffffff;
   box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
+  padding: 40px 30px 55px;
 }
-// item before
-.how-do-card-item {
+// decorate element position absolute etc
+.how-do-card-description::before {
   display: block;
+  position: absolute;
+  right: 50%;
   flex-shrink: 0;
   content: '';
   width: 20px;
-  height: 1px;
+  height: 2px;
   background-color: #ff6b09;
 }
 // hover focus item
-.how-do-card-item:hover,
-.how-do-card-item:focus {
+.how-do-item:hover,
+.how-do-item:focus {
   color: #ffffff;
   background-color: #ff6b09;
+  // p titile
+  .how-do-card-title {
+    color: #ffffff;
+  }
+  .how-do-card-description {
+    color: #ffffff;
+  }
 }
-
+// SVG icon
+.how-do-icon {
+  width: 45px;
+  height: 48px;
+  fill: #ff6b09;
+}
 // p - title
 .how-do-card-title {
-  font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 20px;
-  line-height: 28px;
+  line-height: 1.4;
   text-align: center;
   letter-spacing: 0.08em;
   color: #111518;
+  margin-bottom: 16px;
 }
 // p - descript
 .how-do-card-description {
-  font-style: normal;
+  position: relative;
   font-weight: 500;
   font-size: 18px;
-  line-height: 28px;
+  line-height: 1.56;
   text-align: center;
   letter-spacing: 0.08em;
   color: #b9b9b9;
+  margin-top: 16px;
 }
-// paragraph
 
-// M E D I A  styles - mob - tab - desk
+// MEDIA  styles - mob - tab - desk
+
+// M O B I L E
 @media screen and (min-width: 480px) {
+  .how-we-do {
+    width: 320px;
+    padding: 20px;
+  }
+  //   h3
+  .how-we-do-title {
+    font-size: 20px;
+    text-align: right;
+  }
+  //   li
+  .how-do-item {
+    width: 100%;
+    height: 425px;
+    flex-basis: calc((100% - 20px) / 1);
+    margin-right: 20px;
+    margin-bottom: 20px;
+    background: #ffffff;
+    box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
+    padding: 40px 30px 55px;
+  }
+  // p - title
+  .how-do-card-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 2;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+  // p - descript
+  .how-do-card-description {
+    position: relative;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.67;
+    text-align: center;
+  }
 }
 
+// T A B L E T
 @media screen and (min-width: 768px) {
+  .how-we-do {
+    width: 688px;
+  }
+  .how-we-do-title {
+    font-size: 26px;
+    text-align: center;
+  }
+  //   li
+  .how-do-item {
+    width: 334px;
+    height: 334px;
+    flex-basis: calc((100% - 40px) / 2);
+    margin-right: 20px;
+  }
+  // p - title
+  .how-do-card-title {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 2;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+  // p - descript
+  .how-do-card-description {
+    position: relative;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.67;
+    text-align: center;
+  }
 }
 
+// D E S K T O P
 @media screen and (min-width: 1366px) {
+  .how-we-do {
+    width: 1314px;
+    // height: auto;
+  }
+  //   h3
+  .how-we-do-title {
+    font-size: 46px;
+  }
+  //   li
+  .how-do-item {
+    width: 425px;
+    height: 425px;
+    flex-basis: calc((100% - 60px) / 3);
+    margin-right: 20px;
+  }
 }
