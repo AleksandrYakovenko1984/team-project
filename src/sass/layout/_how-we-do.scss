@@ -1,6 +1,5 @@
 // main section
 .how-we-do {
-  background-color: blanchedalmond;
   margin-bottom: 130px;
 }
 // h3
@@ -19,29 +18,38 @@
 }
 // li
 .how-do-item {
+  position: relative;
   width: 100%;
   margin-right: -20px;
   margin-bottom: 20px;
   background: #ffffff;
   box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
-  padding: 40px 30px 55px;
+  padding: 40px 20px 55px;
 }
 // decorate element position absolute etc
-.how-do-card-description::before {
+.how-do-card-title::after {
   display: block;
   position: absolute;
-  right: 50%;
+  left: 50%;
+  transform: translateX(-60%);
   flex-shrink: 0;
   content: '';
   width: 20px;
   height: 2px;
   background-color: #ff6b09;
+  margin-top: 15px;
 }
+.how-do-card-title::after:hover,
+.how-do-card-title::after:focus {
+  background-color: #ffffff;
+}
+
 // hover focus item
 .how-do-item:hover,
 .how-do-item:focus {
   color: #ffffff;
   background-color: #ff6b09;
+  fill: #ffffff;
   // p titile
   .how-do-card-title {
     color: #ffffff;
@@ -49,33 +57,47 @@
   .how-do-card-description {
     color: #ffffff;
   }
+  & .how-do-icon {
+    fill: #ffffff;
+  }
 }
+.how-do-item:hover .how-do-card-title::after,
+.how-do-item:focus .how-do-card-title::after {
+  background-color: #ffffff;
+}
+
 // SVG icon
 .how-do-icon {
+  position: absolute;
+  transform: translateX(-50%);
+  left: 200px;
   width: 45px;
   height: 48px;
   fill: #ff6b09;
 }
+
 // p - title
 .how-do-card-title {
+  display: block;
+  position: relative;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.4;
+  line-height: 1;
   text-align: center;
   letter-spacing: 0.08em;
   color: #111518;
-  margin-bottom: 16px;
+  margin-top: 70px;
 }
 // p - descript
 .how-do-card-description {
-  position: relative;
+  display: block;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.56;
   text-align: center;
   letter-spacing: 0.08em;
   color: #b9b9b9;
-  margin-top: 16px;
+  padding-top: 30px;
 }
 
 // MEDIA  styles - mob - tab - desk
@@ -83,13 +105,12 @@
 // M O B I L E
 @media screen and (min-width: 480px) {
   .how-we-do {
-    width: 320px;
+    width: 100%;
     padding: 20px;
   }
   //   h3
   .how-we-do-title {
     font-size: 20px;
-    text-align: right;
   }
   //   li
   .how-do-item {
@@ -100,7 +121,7 @@
     margin-bottom: 20px;
     background: #ffffff;
     box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
-    padding: 40px 30px 55px;
+    // padding: 40px 30px 55px;
   }
   // p - title
   .how-do-card-title {
@@ -112,10 +133,8 @@
   }
   // p - descript
   .how-do-card-description {
-    position: relative;
     font-weight: 500;
     font-size: 12px;
-    line-height: 1.67;
     text-align: center;
   }
 }
@@ -140,17 +159,12 @@
   .how-do-card-title {
     font-weight: 400;
     font-size: 14px;
-    line-height: 2;
-    text-align: center;
-    margin-bottom: 16px;
+    line-height: 1.4;
   }
   // p - descript
   .how-do-card-description {
-    position: relative;
     font-weight: 500;
     font-size: 12px;
-    line-height: 1.67;
-    text-align: center;
   }
 }
 
@@ -158,11 +172,11 @@
 @media screen and (min-width: 1366px) {
   .how-we-do {
     width: 1314px;
-    // height: auto;
   }
   //   h3
   .how-we-do-title {
     font-size: 46px;
+    text-align: left;
   }
   //   li
   .how-do-item {
@@ -170,5 +184,14 @@
     height: 425px;
     flex-basis: calc((100% - 60px) / 3);
     margin-right: 20px;
+  }
+  // p - title
+  .how-do-card-title {
+    font-weight: 700;
+    font-size: 20px;
+  }
+  // p - descript
+  .how-do-card-description {
+    font-size: 18px;
   }
 }
