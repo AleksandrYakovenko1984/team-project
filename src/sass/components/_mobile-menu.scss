@@ -30,6 +30,12 @@
 
     color: #ffffff;
   }
+  .mobile-menu__logo::before {
+    position: absolute;
+    left: 82px;
+
+    top: 51px;
+  }
   .mobile-menu__close-button {
     width: 0;
     height: 0;
@@ -145,6 +151,12 @@
     letter-spacing: 0.04em;
 
     color: #ffffff;
+  }
+  .mobile-menu__logo::before {
+    position: absolute;
+    left: 116px;
+
+    top: 39px;
   }
   .logo__txt-item {
     color: #ffffff;

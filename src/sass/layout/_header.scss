@@ -16,6 +16,8 @@
 
   color: var(--primary-text-color);
 }
+.logo__container {
+}
 .logo__link {
   text-decoration: none;
 }
@@ -66,23 +68,25 @@
   color: #ff6b09;
 }
 @media screen and (max-width: 767px) {
-  // .logo__front::after {
-  //   content: ' ';
-  //   background-image: url(/./images/icons/fire.svg);
-  //   position: absolute;
-
-  //   left: 1.76%;
-  //   right: 0.26%;
-  //   top: 0.01%;
-  //   bottom: 0.01%;
-  //   width: 22px;
-  //   height: 30px;
-  // }
-
   .header {
     padding-top: 30px;
     padding-bottom: 30px;
+    position: relative;
   }
+  .logo__front {
+    margin-right: 20px;
+  }
+  .logo__front::before {
+    content: ' ';
+    background-image: url(/./images/icons/fire.mob.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 22px;
+    height: 30px;
+    left: 82px;
+    top: 26px;
+  }
+
   .header-menu {
     display: none;
   }
@@ -118,6 +122,19 @@
   .header {
     padding-top: 40px;
     padding-bottom: 40px;
+    position: relative;
+  }
+  .logo__front {
+    margin-right: 20px;
+  }
+  .logo__front::before {
+    content: ' ';
+    background-image: url(/./images/icons/fire.svg);
+    position: absolute;
+    width: 22px;
+    height: 30px;
+    left: 102px;
+    top: 42px;
   }
   .nav-list__btn {
     width: 260px;
@@ -131,6 +148,23 @@
   .navigation {
     display: flex;
     justify-content: space-between;
+  }
+  .header {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    position: relative;
+  }
+  .logo__front {
+    margin-right: 20px;
+  }
+  .logo__front::before {
+    content: ' ';
+    background-image: url(/./images/icons/fire.svg);
+    position: absolute;
+    width: 22px;
+    height: 30px;
+    left: 102px;
+    top: 37px;
   }
   .header-menu {
     display: flex;
