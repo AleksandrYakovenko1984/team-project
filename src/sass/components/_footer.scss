@@ -1,0 +1,124 @@
+.contacts-information {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px;
+  }
+}
+
+.logo-link {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 21px;
+  @media screen and (min-width: 768px) {
+    margin-right: 225px;
+  }
+  @media screen and (min-width: 1366px) {
+    margin-right: 312px;
+    margin-left: 183px;
+    margin-top: 103px;
+    margin-bottom: 53px;
+  }
+}
+
+.logo {
+  font-weight: 800;
+  font-size: 26px;
+  line-height: 1.23;
+  letter-spacing: 0.04em;
+  color: var(--primary-text-color);
+}
+
+.text {
+  font-weight: 700;
+  font-size: 8px;
+  line-height: 1.25;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--primary-text-color);
+}
+
+.text-decoration {
+  color: var(--accennt-color);
+}
+
+.contact-footer {
+  display: flex;
+  justify-content: center;
+  @media screen and (min-width: 1366px) {
+    margin-top: 120px;
+  }
+}
+
+.icon-phone {
+  width: 20px;
+  height: 20px;
+  @media screen and (min-width: 1366px) {
+    width: 30px;
+    height: 29px;
+  }
+}
+
+.number {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.08em;
+  color: #111518;
+  text-decoration: none;
+  margin-left: 10px;
+  @media screen and (min-width: 1366px) {
+    font-size: 30px;
+    line-height: 1.23;
+  }
+}
+
+.divide {
+  @media screen and (min-width: 320px) and (max-width: 767.98px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    border-left: 1px solid #b9b9b9;
+    height: 40px;
+  }
+
+  @media screen and (min-width: 1366px) {
+    margin-top: 120px;
+  }
+}
+
+.social-icon {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  @media screen and (min-width: 1366px) {
+    display: block;
+    margin-right: 260px;
+    margin-top: 150px;
+  }
+}
+
+.footer {
+  width: 100%;
+  height: 70px;
+  background-color: var(--primary-text-color);
+  @media screen and (min-width: 1366px) {
+    margin-bottom: 56px;
+  }
+}
+
+.footer-text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 2;
+  color: #b9b9b9;
+  padding-left: 52px;
+  padding-top: 21px;
+}
