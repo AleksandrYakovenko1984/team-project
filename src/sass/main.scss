@@ -1,15 +1,24 @@
 // Style for base
-@import "./base/common";
-@import "./base/container";
+@import './base/common';
+@import './base/container';
 
 //Style for components
-@import "./components/section-title.scss";
-@import "./components/footer";
+@import './components/section-title.scss';
+@import './components/footer';
 
 //Style for layout
-@import "./layout/problems";
-@import "./layout/guarantee";
 
+@import './layout/guarantee';
+@import './layout/problems';
+@import './layout/header';
+@import './layout/hero';
+@import './layout/how-we-do';
+@import './layout/teacher';
+
+@import './components/mobile-menu';
+
+@import './layout/program';
 
 //Style for utils
-@import "./utils/variables";
+@import './utils/variables';
+@import './reviews';
