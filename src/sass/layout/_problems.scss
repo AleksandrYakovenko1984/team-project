@@ -1,100 +1,106 @@
-.problems-title{
-    text-align: left;
+.problems-title {
+  text-align: left;
 }
-.problems{
-    padding-top: 30px;
-    padding-bottom: 50px;
-    background: linear-gradient(var(--primary-text-color) 0 545px, rgba(255, 255, 255, 1) 545px 100%);
+.problems {
+  padding-top: 30px;
+  padding-bottom: 50px;
+  background: linear-gradient(var(--primary-text-color) 0 545px, rgba(255, 255, 255, 1) 545px 100%);
 
-    &__list{
-        background: rgba(255, 255, 255, 1);
-        padding: 10px 10px 20px 30px;
-        box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+  &__list {
+    background: rgba(255, 255, 255, 1);
+    padding: 10px 10px 20px 30px;
+    box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
 
-        counter-reset: items ;
+    counter-reset: items;
 
-        &-item::before{
-            margin-bottom: 5px;
-            counter-increment: items;
-            content: '— ' counter(items, decimal-leading-zero);
-            color: var(--accennt-color);
+    &-item::before {
+      margin-bottom: 5px;
+      counter-increment: items;
+      content: '— ' counter(items, decimal-leading-zero);
+      color: var(--accennt-color);
 
-            font-weight: bold;
-            font-size: 14px;
-            line-height: 1.21;
-            letter-spacing: 0.08em;
-        }
-
-        &-item{
-            margin-top: 10px;
-        }
-
-        &-descrition{
-            font-weight: bold;
-            font-size: 14px;
-            line-height: 2;
-            letter-spacing: 0.08em;
-        }
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 1.21;
+      letter-spacing: 0.08em;
     }
+
+    &-item {
+      margin-top: 10px;
+    }
+
+    &-descrition {
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 2;
+      letter-spacing: 0.08em;
+    }
+  }
 }
 
-.problems-title-word{
-    color: var(--accennt-color);
+.problems-title-word {
+  color: var(--accennt-color);
 }
 
 @media screen and (min-width: 768px) {
-    .section-title{
-        width: 450px;
-    }
-    .problems{
-        background: linear-gradient(var(--primary-text-color) 0 340px, rgba(255, 255, 255, 1) 340px 100%);
+  .section-title {
+    width: 450px;
+  }
+  .problems {
+    background: linear-gradient(
+      var(--primary-text-color) 0 340px,
+      rgba(255, 255, 255, 1) 340px 100%
+    );
 
-        &__list{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
 
-            &-item{
-                width: 220px;
-            }
-        }
+      &-item {
+        width: 220px;
+      }
     }
   }
+}
 
-  @media screen and (min-width: 1366px) {
-    .section-title{
-        width: 850px;
-    }
-    .problems{
-        padding-top: 115px;
-        padding-bottom: 180px;
-        
-        background: linear-gradient(var(--primary-text-color) 0 560px, rgba(255, 255, 255, 1) 560px 100%);
+@media screen and (min-width: 1366px) {
+  .section-title {
+    width: 850px;
+  }
+  .problems {
+    padding-top: 115px;
+    padding-bottom: 180px;
 
-        &__list{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: unset;
-            padding-top: 10px;
-            padding-bottom: 60px;
-            padding-left: 105px;
-            padding-right: 105px;
+    background: linear-gradient(
+      var(--primary-text-color) 0 560px,
+      rgba(255, 255, 255, 1) 560px 100%
+    );
 
-            &-item{
-                width: 330px;
-                margin-top: 60px;
-            }
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: unset;
+      padding-top: 10px;
+      padding-bottom: 60px;
+      padding-left: 105px;
+      padding-right: 105px;
 
-            &-item:not(:nth-child(3n)){
-                margin-right: 40px;
-            }
+      &-item {
+        width: 330px;
+        margin-top: 60px;
+      }
 
-            &-descrition{
-                font-size: 20px;
-            }
-            &-item::before{
-                font-size: 20px;
-            }
-        }
+      &-item:not(:nth-child(3n)) {
+        margin-right: 40px;
+      }
+
+      &-descrition {
+        font-size: 20px;
+      }
+      &-item::before {
+        font-size: 20px;
+      }
     }
   }
+}
