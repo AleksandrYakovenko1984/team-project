@@ -34,6 +34,15 @@
 .logo__text-dedicated {
   color: var(--accennt-color);
 }
+.nav-list__item:hover,
+.nav-list__item:focus {
+  color: var(--accennt-color);
+}
+.nav-list__btn:hover,
+.nav-list__btn:focus {
+  background-color: var(--accennt-color);
+  color: #ffffff;
+}
 .nav-list {
   display: flex;
   justify-content: space-between;
@@ -186,6 +195,10 @@
     text-transform: uppercase;
 
     color: #b9b9b9;
+  }
+  .nav-list__item:hover,
+  .nav-list__item:focus {
+    color: var(--accennt-color);
   }
   .nav-list__btn {
     margin-left: 60px;
